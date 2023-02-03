@@ -1,0 +1,12 @@
+.progress {
+  width: 200px;
+}
+.image {
+  width: 95px;
+  height: 95px;
+}
+
+.text {
+  font-family: "Helvetica Neue";
+  color: #ddd0c8;
+}

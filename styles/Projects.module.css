@@ -1,0 +1,14 @@
+.projectButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.picture {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 700px;
+  height: 600px;
+}

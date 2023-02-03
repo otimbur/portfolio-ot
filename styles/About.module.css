@@ -1,0 +1,75 @@
+/* Section 1 - Technical Skills*/
+.HardSkills {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  background-image: url("../../portfolio-otimbur/src/4.png");
+  background-repeat: no-repeat;
+}
+.mainAbout {
+  display: flex;
+  align-items: flex-end;
+  padding: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+.TechSkills {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 80%;
+  row-gap: 50px;
+  column-gap: 2rem;
+  margin-top: 2rem;
+  margin-left: 5rem;
+}
+
+/* Section Work expirience */
+.WorkExp {
+  background-image: url("../../portfolio-otimbur/src/3.png");
+  background-repeat: no-repeat;
+  margin-top: 10rem;
+}
+.nonTechSkills {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5rem;
+  justify-content: flex-end;
+  row-gap: 10px;
+  column-gap: 5rem;
+}
+
+/* Section 3- Projects */
+.Projects {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10rem;
+  background-image: url("../../portfolio-otimbur/src/3.png");
+  background-repeat: no-repeat;
+}
+
+.ProjectContainer {
+  margin: 0 5%;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 30px;
+  column-gap: 2rem;
+}
+/* Default*/
+.TitleSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 35%;
+  max-width: 30rem;
+  align-items: center;
+  border-radius: 25px;
+  box-shadow: 0px 15px 20px #d9d9d9;
+  max-height: 5rem;
+}

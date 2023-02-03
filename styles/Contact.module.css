@@ -1,0 +1,43 @@
+.contactContainer {
+  margin: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-image: url("../../portfolio-otimbur/src/getintouch.jpeg");
+  background-repeat: no-repeat;
+}
+
+.formContainer {
+  display: flex;
+  margin-bottom: 5px;
+  padding: 3rem;
+  min-width: 40%;
+  margin-left: 2rem;
+}
+
+.label {
+  display: flex;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  font-size: x-large;
+  color: #ffac1c;
+}
+.input {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 400px;
+  padding-top: 3rem;
+}
+.handleSubmit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submitBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

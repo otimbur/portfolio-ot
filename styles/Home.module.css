@@ -1,0 +1,51 @@
+.HomePage {
+  background-image: url("../../portfolio-otimbur/src/3.png");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+.Content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.Picture {
+  display: flex;
+  max-width: 40%;
+  padding-right: 15rem;
+  padding-top: 2rem;
+}
+
+.ProfilePic {
+  border-radius: 50%;
+  border: transparent;
+  width: 400px;
+  height: 400px;
+  filter: drop-shadow(0 0 1rem black);
+}
+
+.Name {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15rem;
+  max-width: 70%;
+  justify-content: center;
+}
+
+.HomeButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  padding-right: 1rem;
+}
+
+.aboutText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem;
+}

@@ -1,0 +1,43 @@
+.ExpItem {
+  display: flex;
+  margin: 3rem;
+  justify-content: center;
+  flex-direction: column;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.CompanyDetails {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.Possition {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.Company {
+  display: flex;
+  align-items: flex-start;
+  font-size: large;
+  font-weight: bold;
+}
+
+.ExpItem ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.Possition {
+  display: flex;
+  align-items: flex-start;
+  font-size: large;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+}

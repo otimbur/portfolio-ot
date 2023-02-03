@@ -1,0 +1,27 @@
+.CardComponent {
+  display: flex;
+  width: 225px;
+  height: 220px;
+  flex-direction: column;
+  box-shadow: 0px 15px 20px #d9d9d9;
+  border-radius: 15px;
+}
+
+.CardImage {
+  width: 150px;
+  height: 150px;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.CardImageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Value {
+  display: flex;
+  align-items: flex-end;
+  padding-left: 80%;
+}
