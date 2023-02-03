@@ -2,7 +2,8 @@
   "name": "olga-timbur-portfolio",
   "version": "0.1.0",
   "engines": {
-    "node": "8.12.1"
+    "node": "18.14.0",
+    "npm": "9.4.0"
   },
   "private": true,
   "scripts": {
