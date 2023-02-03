@@ -1,6 +1,4 @@
 .HomePage {
-  background-image: url("../../portfolio-otimbur/src/3.png");
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
 }
