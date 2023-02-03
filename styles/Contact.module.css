@@ -4,8 +4,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  background-image: url("../../portfolio-otimbur/src/getintouch.jpeg");
-  background-repeat: no-repeat;
 }
 
 .formContainer {
