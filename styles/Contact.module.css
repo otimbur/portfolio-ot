@@ -5,6 +5,11 @@
   justify-content: center;
   flex-direction: row;
 }
+.getInTouch {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
 .formContainer {
   display: flex;

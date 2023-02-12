@@ -1,5 +1,5 @@
 import * as React from "react";
-import ExpComponentStyle from "./ExpComponent.module.css";
+import ResumeStyle from "../../styles/Resume.module.css";
 
 interface Props {
   company: string;
@@ -15,12 +15,12 @@ export default function ExpComponent({
   skill,
 }: Props) {
   return (
-    <div className={ExpComponentStyle.ExpItem}>
-      <div className={ExpComponentStyle.CompanyDetails}>
-        <div className={ExpComponentStyle.Company}>{company}</div>
-        <div className={ExpComponentStyle.Time}>{time}</div>
+    <div className={ResumeStyle.ExpItem}>
+      <div className={ResumeStyle.CompanyDetails}>
+        <div className={ResumeStyle.Company}>{company}</div>
+        <div className={ResumeStyle.Time}>{time}</div>
       </div>
-      <div className={ExpComponentStyle.Possition}>{position}</div>
+      <div className={ResumeStyle.Possition}>{position}</div>
       <ul>{skill}</ul>
     </div>
   );

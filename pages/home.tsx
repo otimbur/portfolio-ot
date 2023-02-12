@@ -11,7 +11,15 @@ const Home = () => {
     <div className={StyleHome.HomePage}>
       <div className={StyleHome.Content}>
         <div className={StyleHome.Name}>
-          <Typography variant="h1" mt={2}>
+          <Typography
+            variant="h1"
+            mt={2}
+            sx={{
+              display: "flex",
+              alignContent: "center",
+              justifyItems: "center",
+            }}
+          >
             Olga Timbur
           </Typography>
           <div className={StyleHome.HomeButtons}>
@@ -23,13 +31,12 @@ const Home = () => {
             </StyledBtn2>
           </div>
         </div>
-        <div className={StyleHome.Picture}>
-          <Image
-            className={StyleHome.ProfilePic}
-            src={require("../src/profil.jpg")}
-            alt="profile"
-          ></Image>
-        </div>
+
+        <Image
+          className={StyleHome.ProfilePic}
+          src={require("../src/profil.jpg")}
+          alt="profile"
+        ></Image>
       </div>
       <div className={StyleHome.aboutText}>
         <Typography

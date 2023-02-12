@@ -33,13 +33,31 @@ const Contact = () => {
 
   return (
     <div className={styleContact.contactContainer}>
-      <Typography
-        className={styleContact.formName}
-        variant="h4"
-        sx={{ color: "black", fontFamily: "monospace", fontWeight: "bold" }}
-      >
-        Get In Touch
-      </Typography>
+      <div className={styleContact.getInTouch}>
+        <Typography
+          className={styleContact.formName}
+          variant="h4"
+          sx={{ color: "black", fontFamily: "monospace", fontWeight: "bold" }}
+        >
+          Get In Touch
+        </Typography>
+        <div>
+          <Typography
+            className={styleContact.formName}
+            variant="h4"
+            sx={{ color: "black", fontFamily: "monospace", fontWeight: "bold" }}
+          >
+            Phone:206-965-5550
+          </Typography>
+          <Typography
+            className={styleContact.formName}
+            variant="h4"
+            sx={{ color: "black", fontFamily: "monospace", fontWeight: "bold" }}
+          >
+            Email:olgatimbur1@gmail.com
+          </Typography>
+        </div>
+      </div>
 
       <div className={styleContact.formContainer}>
         <form onSubmit={formik.handleSubmit}>

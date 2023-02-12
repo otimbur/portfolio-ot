@@ -1,43 +1,40 @@
 .HomePage {
   display: flex;
+  margin: 15rem;
+  margin-top: 7rem;
   flex-direction: column;
+  justify-content: center;
 }
 .Content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
   padding-top: 2rem;
-}
-
-.Picture {
-  display: flex;
-  max-width: 40%;
-  padding-right: 15rem;
-  padding-top: 2rem;
-}
-
-.ProfilePic {
-  border-radius: 50%;
-  border: transparent;
-  width: 400px;
-  height: 400px;
-  filter: drop-shadow(0 0 1rem black);
-}
-
-.Name {
-  display: flex;
-  flex-direction: column;
-  padding-left: 15rem;
-  max-width: 70%;
-  justify-content: center;
 }
 
 .HomeButtons {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 2rem;
-  padding-right: 1rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.ProfilePic {
+  border-radius: 30%;
+  border: transparent;
+  width: 300px;
+  height: 300px;
+  filter: drop-shadow(0 0 2rem black);
+}
+
+.Name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .aboutText {
@@ -45,5 +42,5 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 5rem;
+  padding: 3rem;
 }

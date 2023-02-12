@@ -1,20 +1,19 @@
 import { Button, styled } from "@mui/material";
 
 export const StyledBtn1 = styled(Button)(({ theme }) => ({
-  backgroundColor: "white",
-  color: "#323232",
-  margin: 5,
+  margin: 3,
   maxHeight: "3rem",
-  minWidth: 160,
-  padding: 15,
+  minWidth: 150,
   borderRadius: 25,
   "&:hover": {
     backgroundColor: "#DDD0C8",
-    color: "white",
+    color: "#323232",
   },
-  fontSize: 25,
+  fontSize: 20,
   textTransform: "none",
   fontWeight: "bold",
+  backgroundColor: "#323232",
+  color: "white",
 }));
 
 export const StyledBtn2 = styled(Button)(({ theme }) => ({
