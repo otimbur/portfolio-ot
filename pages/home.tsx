@@ -10,9 +10,17 @@ const Home = () => {
   return (
     <div className={StyleHome.HomePage}>
       <div className={StyleHome.Content}>
+        <Image
+          className={StyleHome.Background}
+          src={require("../src/3.png")}
+          alt="profile"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+        ></Image>
         <div className={StyleHome.Name}>
           <Typography
-            variant="h1"
+            variant="h2"
             mt={2}
             sx={{
               display: "flex",

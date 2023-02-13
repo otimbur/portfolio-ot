@@ -5,6 +5,11 @@
   flex-direction: column;
   justify-content: center;
 }
+.Background {
+  height: 500px;
+  z-index: 0;
+  object-fit: cover;
+}
 .Content {
   display: flex;
   align-items: center;
@@ -35,10 +40,12 @@
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  z-index: 1;
 }
 
 .aboutText {
   display: flex;
   flex-direction: column;
   padding: 3rem;
+  z-index: 1;
 }

@@ -4,6 +4,9 @@ import styleContact from "../styles/Contact.module.css";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { sendContactForm } from "../lib/api";
+import { useRouter } from "next/router";
+import Image from "next/image";
+import { color } from "@mui/system";
 
 const initialValues = {
   firstName: "",
@@ -11,18 +14,23 @@ const initialValues = {
   email: "",
   notes: "",
 };
-const onSubmit = (values: any) => {
-  sendContactForm(values);
-};
 
 const validate = (values: any) => {};
 const validationSchema = Yup.object({
-  firstName: Yup.string().required("Required"),
-  lastName: Yup.string().required("Required"),
-  email: Yup.string().email("Invalid email format").required("Required"),
-  notes: Yup.string().required("Required"),
+  firstName: Yup.string().required("First name required"),
+  lastName: Yup.string().required("Last name required"),
+  email: Yup.string()
+    .email("Invalid email format")
+    .required("Email is required"),
+  notes: Yup.string().required("Please let me know how I can help"),
 });
 const Contact = () => {
+  const router = useRouter();
+
+  const onSubmit = (values: any) => {
+    sendContactForm(values);
+    router.push({ pathname: "/sent" });
+  };
   const formik = useFormik({
     initialValues,
     onSubmit,
@@ -31,10 +39,17 @@ const Contact = () => {
 
   return (
     <div className={styleContact.contactContainer}>
+      <Image
+        className={styleContact.connectImg}
+        src={require("../src/conect1.png")}
+        alt="connect"
+      ></Image>
       <div className={styleContact.formContainer}>
         <form onSubmit={formik.handleSubmit}>
           <label className={styleContact.label} htmlFor="firstName">
-            First name
+            {formik.touched.firstName && formik.errors.firstName
+              ? formik.errors.firstName
+              : "First name"}
           </label>
           <input
             className={styleContact.input}
@@ -43,9 +58,12 @@ const Contact = () => {
             name="firstName"
             onChange={formik.handleChange}
             value={formik.values.firstName}
+            onBlur={formik.handleBlur}
           />
           <label className={styleContact.label} htmlFor="lastName">
-            Last name
+            {formik.touched.lastName && formik.errors.lastName
+              ? formik.errors.lastName
+              : "Last name"}
           </label>
           <input
             className={styleContact.input}
@@ -56,7 +74,9 @@ const Contact = () => {
             value={formik.values.lastName}
           />
           <label className={styleContact.label} htmlFor="email">
-            E-mail
+            {formik.touched.email && formik.errors.email
+              ? formik.errors.email
+              : "E-mail"}
           </label>
           <input
             className={styleContact.input}
@@ -65,9 +85,12 @@ const Contact = () => {
             name="email"
             onChange={formik.handleChange}
             value={formik.values.email}
+            onBlur={formik.handleBlur}
           />
           <label className={styleContact.label} htmlFor="notes">
-            Notes
+            {formik.touched.notes && formik.errors.notes
+              ? formik.errors.notes
+              : "Notes"}
           </label>
           <input
             className={styleContact.input}
@@ -76,17 +99,9 @@ const Contact = () => {
             name="notes"
             onChange={formik.handleChange}
             value={formik.values.notes}
+            onBlur={formik.handleBlur}
           />
-          <StyledBtn2
-            className={styleContact.submitBtn}
-            type="submit"
-            disabled={
-              !formik.values.firstName ||
-              !formik.values.lastName ||
-              !formik.values.email ||
-              !formik.values.notes
-            }
-          >
+          <StyledBtn2 className={styleContact.submitBtn} type="submit">
             Submit
           </StyledBtn2>
         </form>

@@ -11,6 +11,7 @@ import { ListItem } from "@mui/material";
 import SectionTitle from "../components/About/SectionTitle";
 import SkillCard from "../components/About/SkillCard";
 import ProjectItem from "../components/project/projectComponent";
+import Image from "next/image";
 
 const about = () => {
   function skillItem(skill: any) {
@@ -19,6 +20,14 @@ const about = () => {
 
   return (
     <div className={AboutStyle.AboutPage}>
+      <Image
+        className={AboutStyle.Background}
+        src={require("../src/4.png")}
+        alt="profile"
+        layout="fill"
+        objectFit="cover"
+        objectPosition="center"
+      ></Image>
       <section className={AboutStyle.HardSkills}>
         <SectionTitle name={"Technicall Skills"} />
         <div className={AboutStyle.mainAbout}>
