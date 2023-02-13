@@ -1,6 +1,6 @@
 .HomePage {
   display: flex;
-  margin: 15rem;
+  margin: 10rem;
   margin-top: 7rem;
   flex-direction: column;
   justify-content: center;
@@ -39,8 +39,6 @@
 
 .aboutText {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
   padding: 3rem;
 }

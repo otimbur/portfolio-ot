@@ -20,10 +20,11 @@ export const handler = (
     try {
       transporter.sendMail({
         ...mailOptions,
-        subject: data.subject,
-        text: "This is a test string",
-        html: "",
+        subject: `${data.firstName}  ${data.lastName}`,
+        text: "This is a test",
+        html: `<div><p>${data.email}</p> <p>${data.notes}</p></div>`,
       });
+      return res.status(200).json({ message: "sent" });
     } catch (error: any) {
       console.log(error);
       return res.status(400).json({ message: error.message });

@@ -18,11 +18,23 @@ const about = () => {
   }
 
   return (
-    <>
+    <div className={AboutStyle.AboutPage}>
       <section className={AboutStyle.HardSkills}>
         <SectionTitle name={"Technicall Skills"} />
         <div className={AboutStyle.mainAbout}>
           <div className={AboutStyle.TechSkills}>
+            <SkillCard
+              value={60}
+              image={require("../src/JavaScript-logo.png")}
+              alt={"JS"}
+              valueBuffer={100}
+            />
+            <SkillCard
+              value={50}
+              image={require("../src/webio.webp")}
+              alt={"JS"}
+              valueBuffer={100}
+            />
             <SkillCard
               value={30}
               image={require("../src/java.png")}
@@ -36,12 +48,7 @@ const about = () => {
               alt={"mui"}
               valueBuffer={100}
             />
-            <SkillCard
-              value={60}
-              image={require("../src/JavaScript-logo.png")}
-              alt={"JS"}
-              valueBuffer={100}
-            />
+
             <SkillCard
               value={40}
               image={require("../src/node.webp")}
@@ -51,12 +58,6 @@ const about = () => {
             <SkillCard
               value={60}
               image={require("../src/react.png")}
-              alt={"JS"}
-              valueBuffer={100}
-            />
-            <SkillCard
-              value={50}
-              image={require("../src/webio.webp")}
               alt={"JS"}
               valueBuffer={100}
             />
@@ -98,11 +99,8 @@ const about = () => {
         <SectionTitle name={"Projects"} />
         <ProjectItem />
       </section>
-    </>
+    </div>
   );
 };
 
 export default about;
-function setProgress(arg0: (prevProgress: any) => any) {
-  throw new Error("Function not implemented.");
-}

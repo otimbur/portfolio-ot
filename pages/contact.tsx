@@ -1,8 +1,6 @@
-import { Typography } from "@mui/material";
 import React from "react";
 import { StyledBtn2 } from "../components/Button";
 import styleContact from "../styles/Contact.module.css";
-import Image from "next/image";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { sendContactForm } from "../lib/api";
@@ -33,32 +31,6 @@ const Contact = () => {
 
   return (
     <div className={styleContact.contactContainer}>
-      <div className={styleContact.getInTouch}>
-        <Typography
-          className={styleContact.formName}
-          variant="h4"
-          sx={{ color: "black", fontFamily: "monospace", fontWeight: "bold" }}
-        >
-          Get In Touch
-        </Typography>
-        <div>
-          <Typography
-            className={styleContact.formName}
-            variant="h4"
-            sx={{ color: "black", fontFamily: "monospace", fontWeight: "bold" }}
-          >
-            Phone:206-965-5550
-          </Typography>
-          <Typography
-            className={styleContact.formName}
-            variant="h4"
-            sx={{ color: "black", fontFamily: "monospace", fontWeight: "bold" }}
-          >
-            Email:olgatimbur1@gmail.com
-          </Typography>
-        </div>
-      </div>
-
       <div className={styleContact.formContainer}>
         <form onSubmit={formik.handleSubmit}>
           <label className={styleContact.label} htmlFor="firstName">

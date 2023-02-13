@@ -15,7 +15,7 @@ export const SectionTitle = ({ title }: Props) => {
           fontSize: 20,
           fontWeight: "bold",
           textTransform: "uppercase",
-          marginLeft: 3,
+          marginLeft: "3rem",
         }}
       >
         {title}

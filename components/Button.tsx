@@ -17,7 +17,7 @@ export const StyledBtn1 = styled(Button)(({ theme }) => ({
 }));
 
 export const StyledBtn2 = styled(Button)(({ theme }) => ({
-  backgroundColor: "#DDD0C8",
+  backgroundColor: "#323232",
   color: "white",
   margin: 5,
   maxHeight: "3rem",

@@ -14,11 +14,13 @@
   margin-top: 1rem;
   align-items: center;
   justify-content: center;
+  object-fit: cover;
 }
 .CardImageContainer {
   display: flex;
   align-items: center;
   justify-content: center;
+  object-fit: cover;
 }
 .Value {
   display: flex;

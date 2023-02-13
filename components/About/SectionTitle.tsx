@@ -14,10 +14,10 @@ export default function SectionTitle({ name }: Props) {
           display: "flex",
           alignItem: "center",
           justifyContent: "center",
-          maxWidth: "800px",
+          alignContent: "center",
           fontFamily: "monospace",
-          fontSize: 40,
-          fontWeight: "bold",
+          fontSize: 30,
+          fontWeight: "medium",
         }}
       >
         {name}

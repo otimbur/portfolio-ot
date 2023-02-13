@@ -9,6 +9,7 @@ import Backdrop from "@mui/material/Backdrop";
 import Box from "@mui/material/Box";
 import Fade from "@mui/material/Fade";
 import Image from "next/image";
+import AboutStyle from "../styles/About.module.css";
 
 const style = {
   position: "absolute" as "absolute",
@@ -46,20 +47,26 @@ export const MediaCard = ({
     <Card
       sx={{
         width: 260,
-        height: 390,
+        height: 350,
         backgroundColor: "transparent",
-        boxShadow: "0px 15px 20px #d9d9d9",
+        boxShadow: "0px 15px 20px #323232",
         borderRadius: 5,
         display: "flex",
         alignItem: "center",
         flexDirection: "column",
-        justifyContent: "space-between",
+        justifyContent: "center",
         flexWrap: "wrap",
         aligncontent: "space-evenly",
       }}
     >
-      <Image src={jobImg} alt={"name"} width="220" height="150"></Image>
-      <CardContent>
+      <CardContent className={AboutStyle.CardContent}>
+        <Image
+          className={AboutStyle.MediaCardImg}
+          src={jobImg}
+          alt={"name"}
+          width="250"
+          height="150"
+        ></Image>
         <Typography
           gutterBottom
           component="div"
@@ -103,15 +110,15 @@ export const MediaCard = ({
           alignContent: "center",
           display: "flex",
           justifyContent: "center",
+          marginTop: "about",
         }}
       >
         <StyledBtn2
-          size="small"
           onClick={handleOpen}
           sx={{
-            alignContent: "center",
-            display: "flex",
-            justifyContent: "space-between",
+            fontSize: 20,
+            minWidth: 100,
+            maxHeight: 20,
           }}
         >
           Experience

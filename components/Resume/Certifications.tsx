@@ -3,11 +3,5 @@ interface Props {
 }
 
 export function Certifications({ certificate }: Props) {
-  return (
-    <div>
-      <ul>
-        <li>{certificate}</li>
-      </ul>
-    </div>
-  );
+  return <div>{certificate}</div>;
 }

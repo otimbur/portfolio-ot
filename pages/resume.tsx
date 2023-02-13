@@ -18,9 +18,18 @@ export default function Resume() {
         style={{ scaleX: scrollYProgress }}
       />
       <div className={ResumeStyle.nameSection}>
-        <Typography>Olga Timbur</Typography>
-        <p>206-965-5550</p>
-        <p>olgatimbur1@gmail.com</p>
+        <Typography
+          variant="h3"
+          mt={2}
+          sx={{
+            display: "flex",
+            alignContent: "center",
+            justifyItems: "center",
+          }}
+        >
+          Olga Timbur
+        </Typography>
+        <p>206-965-5550 || olgatimbur1@gmail.com </p>
       </div>
 
       <ResumeComponent />
