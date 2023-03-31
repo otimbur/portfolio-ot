@@ -46,13 +46,13 @@ const Nav = () => {
               aria-label="open drawer"
               onClick={handleDrawerOpen}
               edge="start"
-              sx={{ mr: 2, ...(open && { display: "none" }), color: "#323232" }}
+              sx={{ mr: 2, ...(open && { display: "none" }), color: "white" }}
             >
-              <MenuIcon sx={{ fontSize: 40, color: "#323232" }} />
+              <MenuIcon sx={{ fontSize: 40, color: "white" }} />
             </IconButton>
             <IconButton size="large" edge="start">
               <GitHubIcon
-                sx={{ fontSize: 40, color: "#323232" }}
+                sx={{ fontSize: 40, color: "white" }}
                 onClick={() => {
                   window.open("https://github.com/otimbur");
                 }}
@@ -60,7 +60,7 @@ const Nav = () => {
             </IconButton>
             <IconButton size="large" edge="start">
               <LinkedInIcon
-                sx={{ fontSize: 40, color: "#323232" }}
+                sx={{ fontSize: 40, color: "white" }}
                 onClick={() => {
                   window.open(
                     "https://www.linkedin.com/in/olga-timbur-072817236/"

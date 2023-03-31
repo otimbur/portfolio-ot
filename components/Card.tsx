@@ -57,6 +57,7 @@ export const MediaCard = ({
         justifyContent: "center",
         flexWrap: "wrap",
         aligncontent: "space-evenly",
+        overflow: "hidden",
       }}
     >
       <CardContent className={AboutStyle.CardContent}>
@@ -71,7 +72,6 @@ export const MediaCard = ({
           gutterBottom
           component="div"
           sx={{
-            display: "flex",
             alignItem: "center",
             justifyContent: "center",
             flexDirection: "column",
@@ -80,6 +80,10 @@ export const MediaCard = ({
             fontFamily: "monospace",
             fontSize: 10,
             fontWeight: "bold",
+            overflow: "hidden",
+            display: "-webkit-box",
+            "-webkit-line-clamp": 3,
+            "-webkit-box-orient": "vertical",
           }}
         >
           {jobTitle}
@@ -108,9 +112,12 @@ export const MediaCard = ({
       <CardActions
         sx={{
           alignContent: "center",
-          display: "flex",
           justifyContent: "center",
           marginTop: "about",
+          overflow: "hidden",
+          display: "-webkit-box",
+          "-webkit-line-clamp": 3,
+          "-webkit-box-orient": "vertical",
         }}
       >
         <StyledBtn2

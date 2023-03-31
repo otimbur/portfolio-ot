@@ -16,7 +16,7 @@ export default function SectionTitle({ name }: Props) {
           justifyContent: "center",
           alignContent: "center",
           fontFamily: "monospace",
-          fontSize: 30,
+          fontSize: 23,
           fontWeight: "medium",
         }}
       >

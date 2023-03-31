@@ -28,6 +28,7 @@ const Contact = () => {
   const router = useRouter();
 
   const onSubmit = (values: any) => {
+    console.log("submitting form", values);
     sendContactForm(values);
     router.push({ pathname: "/sent" });
   };
@@ -39,11 +40,6 @@ const Contact = () => {
 
   return (
     <div className={styleContact.contactContainer}>
-      <Image
-        className={styleContact.connectImg}
-        src={require("../src/conect1.png")}
-        alt="connect"
-      ></Image>
       <div className={styleContact.formContainer}>
         <form onSubmit={formik.handleSubmit}>
           <label className={styleContact.label} htmlFor="firstName">

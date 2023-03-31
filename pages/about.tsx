@@ -20,14 +20,6 @@ const about = () => {
 
   return (
     <div className={AboutStyle.AboutPage}>
-      <Image
-        className={AboutStyle.Background}
-        src={require("../src/4.png")}
-        alt="profile"
-        layout="fill"
-        objectFit="cover"
-        objectPosition="center"
-      ></Image>
       <section className={AboutStyle.HardSkills}>
         <SectionTitle name={"Technicall Skills"} />
         <div className={AboutStyle.mainAbout}>
@@ -73,6 +65,10 @@ const about = () => {
           </div>
         </div>
       </section>
+      <section className={AboutStyle.Projects}>
+        <SectionTitle name={"Projects"} />
+        <ProjectItem />
+      </section>
       <section className={AboutStyle.WorkExp}>
         <SectionTitle name={"Work Experience"} />
         <div className={AboutStyle.nonTechSkills}>
@@ -103,10 +99,6 @@ const about = () => {
             skill={bankingSkills.map(skillItem)}
           />
         </div>
-      </section>
-      <section className={AboutStyle.Projects}>
-        <SectionTitle name={"Projects"} />
-        <ProjectItem />
       </section>
     </div>
   );

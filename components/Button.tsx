@@ -6,13 +6,13 @@ export const StyledBtn1 = styled(Button)(({ theme }) => ({
   minWidth: 150,
   borderRadius: 25,
   "&:hover": {
-    backgroundColor: "#DDD0C8",
-    color: "#323232",
+    backgroundColor: "#323232",
+    color: "white",
   },
   fontSize: 20,
   textTransform: "none",
   fontWeight: "bold",
-  backgroundColor: "#323232",
+  backgroundColor: "#DDD0C8",
   color: "white",
 }));
 
